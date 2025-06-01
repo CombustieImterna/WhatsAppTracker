@@ -52,7 +52,7 @@ Steps
 ```cd WhatsAppTracker```
 
 # 2. Install dependencies
-decompress node_modules
+```npm install @whiskeysockets/baileys@6.7.18 puppeteer-core@24.9.0 qrcode-terminal@0.12.0```
 
 # 3. Start the application
 ```node index.js```
@@ -72,7 +72,7 @@ Edit config.json to customize behavior:
 
 logToFile: Enable/disable saving logs to a file
 
-outputFile: Log file name
+outputFile:logs.txt, morning_logs.txt
 
 monitorKeywords: Track and highlight specific keywords
 
