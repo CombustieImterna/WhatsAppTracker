@@ -49,9 +49,11 @@ Node.js v14+
 ```cd WhatsAppTracker```
 
  2. Install dependencies
+    
 ```npm install @whiskeysockets/baileys@6.7.18 puppeteer-core@24.9.0 qrcode-terminal@0.12.0```
 
- 3. Start the application
+ 4. Start the application
+    
 ```node index.js```
 
 
@@ -98,17 +100,17 @@ monitorKeywords: Track and highlight specific keywords
 
 # Contributing
 
-Pull requests are welcome!
+---Pull requests are welcome!---
 
 # Fork it
-# Create a feature branch
-git checkout -b feature-name
+Create a feature branch
+```git checkout -b feature-name```
 
-# Commit changes
-git commit -m "Add feature"
+Commit changes
+```git commit -m "Add feature"```
 
-# Push and open PR
-git push origin feature-name
+Push and open PR
+```git push origin feature-name```
 
 
 ---
