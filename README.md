@@ -44,6 +44,7 @@ Node.js v14+
 # Steps
 
  1. Clone the repository
+    
 ```git clone https://github.com/nig-droid/WhatsAppTracker.git```
 
 ```cd WhatsAppTracker```
