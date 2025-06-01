@@ -35,26 +35,23 @@ WhatsApp WeB Logs Interface
 
 
 ---
-# Installation
+# Installation:
 
-Requirements:
+# Requirements:
 
 Node.js v14+
 
-npm
+# Steps
 
-
-Steps
-
-# 1. Clone the repository
+ 1. Clone the repository
 ```git clone https://github.com/nig-droid/WhatsAppTracker.git```
 
 ```cd WhatsAppTracker```
 
-# 2. Install dependencies
+ 2. Install dependencies
 ```npm install @whiskeysockets/baileys@6.7.18 puppeteer-core@24.9.0 qrcode-terminal@0.12.0```
 
-# 3. Start the application
+ 3. Start the application
 ```node index.js```
 
 
