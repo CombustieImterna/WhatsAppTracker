@@ -10,7 +10,7 @@ const qrcode = require('qrcode-terminal');
 const fs = require('fs');
 const path = require('path');
 
-const TARGET_JID = 'YOURPHONENUMBER@s.whatsapp.net';
+const TARGET_JID = 'TRACKPHONENUMBER@s.whatsapp.net';
 let onlineStart = null;
 let hasSentGreeting = false;
 const LOG_FILE = 'logs.txt';
