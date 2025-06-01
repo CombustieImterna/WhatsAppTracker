@@ -47,8 +47,8 @@ npm
 Steps
 
 # 1. Clone the repository
-git clone https://github.com/nig-droid/WhatsAppTracker.git
-cd WhatsAppTracker
+```git clone https://github.com/nig-droid/WhatsAppTracker.git```
+```cd WhatsAppTracker```
 
 # 2. Install dependencies
 decompress node_modules and run
