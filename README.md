@@ -30,7 +30,7 @@ Modular code for easy extension
 
 WhatsApp WeB Logs Interface
 
-<img src="./screenshot.png" alt="Screenshot" width="400"/>	
+<img src="./IMG_20250601_043446.jpg" alt="Screenshot" width="400"/>	
 
 
 
