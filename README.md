@@ -26,7 +26,7 @@ Modular code for easy extension
 
 ---
 
-#Preview
+# Preview
 
 WhatsApp Web	Logs Interface
 
@@ -35,7 +35,7 @@ WhatsApp Web	Logs Interface
 
 
 ---
-#Installation
+# Installation
 
 Requirements
 
@@ -48,6 +48,7 @@ Steps
 
 # 1. Clone the repository
 ```git clone https://github.com/nig-droid/WhatsAppTracker.git```
+
 ```cd WhatsAppTracker```
 
 # 2. Install dependencies
@@ -59,7 +60,7 @@ decompress node_modules and run
 
 ---
 
-#Configuration
+# Configuration
 
 Edit config.json to customize behavior:
 
@@ -79,7 +80,7 @@ monitorKeywords: Track and highlight specific keywords
 
 ---
 
-#Usage
+# Usage
 
 1. Open WhatsApp on your phone, tap on the 3 dots, Linked devices
 
@@ -98,7 +99,7 @@ monitorKeywords: Track and highlight specific keywords
 
 ---
 
-#Contributing
+# Contributing
 
 Pull requests are welcome!
 
