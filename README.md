@@ -10,7 +10,7 @@ WhatsAppTracker is a Node.js tool for monitoring and logging WhatsApp Web activi
 
 
 ---
-#Features
+# Features
 
 Real-time WhatsApp Web monitoring
 
