@@ -122,7 +122,7 @@ This project is licensed under the MIT License.
 
 ---
 
-#Acknowledgments
+# Acknowledgments
 
 Node.js & Puppeteer for backend automation
 
