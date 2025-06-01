@@ -28,16 +28,16 @@ Modular code for easy extension
 
 # Preview
 
-WhatsApp Web	Logs Interface
+WhatsApp WeB Logs Interface
 
-	
+<img src="./assets/screenshot.png" alt="Screenshot" width="400"/>	
 
 
 
 ---
 # Installation
 
-Requirements
+Requirements:
 
 Node.js v14+
 
@@ -52,7 +52,7 @@ Steps
 ```cd WhatsAppTracker```
 
 # 2. Install dependencies
-decompress node_modules and run
+decompress node_modules
 
 # 3. Start the application
 ```node index.js```
