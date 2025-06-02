@@ -10,7 +10,7 @@ const qrcode = require('qrcode-terminal');
 const fs = require('fs');
 const path = require('path');
 
-const TARGET_JID = 'YOURPHONENUMBER@s.whatsapp.net';
+const TARGET_JID = 'TARGETPN@s.whatsapp.net';
 let onlineStart = null;
 let hasSentGreeting = false;
 const LOG_FILE = 'logs.txt';
@@ -57,7 +57,7 @@ async function startSock() {
     printQRInTerminal: false
   });
 
-  sock.ev.on('connection.update', (update) => {
+  sock.ev.on('connection.update', async (update) => {
     const { connection, lastDisconnect, qr } = update;
 
     if (qr) {
@@ -73,15 +73,15 @@ async function startSock() {
       if (shouldReconnect) startSock();
     } else if (connection === 'open') {
       console.log('Connected to WhatsApp');
+      await sock.presenceSubscribe(TARGET_JID);
+      console.log(`👁️ Subscribed to presence for ${TARGET_JID}`);
     }
   });
 
   sock.ev.on('presence.update', async (update) => {
-    const { id, presences } = update;
+    console.log('Presence update:', update);
 
-    if (id !== TARGET_JID) return;
-
-    const presence = presences[id];
+    const presence = update.presences?.[TARGET_JID];
     if (!presence) return;
 
     const isOnline = presence.lastKnownPresence === 'available';
@@ -91,14 +91,16 @@ async function startSock() {
         onlineStart = Date.now();
 
         if (isMorningWindow() && !hasSentGreeting) {
-          await sock.sendMessage(TARGET_JID, { text: 'Good morning babyyy<333' });
+          await sock.sendMessage(TARGET_JID, { text: 'Good morning' });
+          console.log('Sent good morning message.');
           hasSentGreeting = true;
         }
       }
     } else {
       if (onlineStart) {
         const duration = Date.now() - onlineStart;
-        logOnlineEvent(id, duration);
+        logOnlineEvent(TARGET_JID, duration);
+        console.log(`Logged online session: ${formatDuration(duration)}`);
         onlineStart = null;
       }
     }
